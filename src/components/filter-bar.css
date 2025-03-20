@@ -1,0 +1,51 @@
+.filter-bar {
+    position: sticky;
+    top: 60px; /* Adjust based on header height */
+    background-color: red; /* Red background for the filter bar */
+    padding: 10px;
+    border-radius: 10px; /* Slightly curved corners */
+    display: flex;
+    gap: 10px; /* Space between filter elements */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.filter-bar input, 
+.filter-bar select, 
+.filter-bar button {
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Slightly rounded corners for inputs */
+    padding: 8px 12px; /* Padding for better appearance */
+    font-size: 1rem; /* Adjust font size */
+}
+
+/* Change button background colors */
+.filter-bar button {
+    background-color: white; /* White background for button */
+    color: red; /* Red text for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.filter-bar button:hover {
+    background-color: lightgrey; /* Light grey on hover */
+}
+
+
+
+/* components/filter-bar.css */
+.filter-bar {
+    background-color: #d10000; /* Light background color */
+    padding: 5px;
+    position: sticky;
+    top: 50px; /* Adjust to be below the header */
+    z-index: 999; /* Ensure it sits above other content */
+    display: flex;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-bar input,
+.filter-bar select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

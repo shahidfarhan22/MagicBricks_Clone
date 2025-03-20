@@ -1,0 +1,309 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo {
+  width: 150px;  /* Set a fixed width for the logo */
+  height: auto;  /* Maintain aspect ratio */
+  /* Optional styles */
+  max-width: 100%;  /* Responsive behavior */
+}
+
+
+/* App.css */
+header {
+  background-color: #333; /* Background color for the navbar */
+  padding: 10px; /* Padding around the navbar */
+}
+
+nav ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox to align items in a row */
+  justify-content: space-around; /* Evenly space out the items */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+  margin: 0; /* Remove margin from list items */
+}
+
+nav ul li a {
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Add some padding for better clickability */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Change background on hover */
+  border-radius: 5px; /* Optional: round the corners */
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px auto;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+
+/* Add this CSS to your stylesheet */
+
+div {
+  margin-bottom: 20px; /* Add spacing between form elements */
+}
+
+label {
+  display: block; /* Puts the label on its own line */
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px; /* Add space below the label */
+  color: #333; /* Darker color for the label text */
+}
+
+select {
+  width: 100%; /* Full width select box */
+  padding: 10px; /* Add padding inside the select box */
+  font-size: 16px;
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 4px; /* Slightly rounded corners */
+  background-color: #f9f9f9; /* Light background for the select box */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  outline: none; /* Remove the outline on focus */
+  transition: border-color 0.3s ease; /* Smooth transition when interacting */
+}
+
+select:focus {
+  border-color: #007BFF; 
+  background-color: #fff; 
+}
+.add-property-form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.add-property-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.add-property-form input,
+.add-property-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.bookmark-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.property-listings {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.property-listings h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-bottom: 3px solid #007bff;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.property-listings ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.property-listings li {
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.property-listings li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.property-listings img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #007bff;
+}
+
+.property-content {
+  padding: 20px;
+}
+
+.property-listings h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #007bff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.property-listings p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.property-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.property-details p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.property-listings button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.property-listings button:hover {
+  background-color: #0056b3;
+}
+
+.property-listings button:nth-of-type(2) {
+  background-color: #dc3545;
+}
+
+.property-listings button:nth-of-type(2):hover {
+  background-color: #c82333;
+}
+
+@media (max-width: 768px) {
+  .property-listings ul {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .property-listings h2 {
+      font-size: 2rem;
+  }
+
+  .property-listings li {
+      flex: 1 1 calc(50% - 20px);
+  }
+}
+
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  margin-top: 40px;
+}
+
+
