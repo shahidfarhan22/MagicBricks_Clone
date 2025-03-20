@@ -1,0 +1,267 @@
+.filter-bar {
+    position: sticky;
+    top: 0px; /* Adjust based on header height */
+    background-color: rgb(201, 39, 39); /* Red background for the filter bar */
+    padding: 5px 8px; /* Reduced padding for a smaller height */
+    border-radius: 0px; /* Slightly curved corners */
+    display: flex;
+    gap: 10px; /* Space between filter elements */
+    z-index: 1000; /* Ensure it stays on top */
+    height: 35px; /* Set a fixed height for the filter bar */
+}
+
+.filter-bar input,
+.filter-bar select{
+    border: none; /* Remove default border */
+    border-radius: 15px; /* Slightly rounded corners for inputs */
+    padding: 6px; /* Uniform padding for compactness */
+    font-size: 0.85rem; /* Slightly smaller font size */
+    height: 20px; /* Set a fixed height for uniformity */
+}
+
+.filter-bar button {
+    height: 30px;
+    padding: 5px 8px;           /* Adjust padding for better button size */
+    background-color: #24b661;    /* Button background color */
+    color: white;                  /* Text color */
+    border: none;                  /* Remove default border */
+    border-radius: 15px;           /* Rounded corners */
+    cursor: pointer;               /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.filter-bar select {
+    min-width: 10px; /* Minimum width for select elements */
+}
+
+
+
+.filter-bar button {
+    background-color: rgb(190, 213, 15); /* White background for button */
+    color: rgb(10, 10, 10); /* Red text for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.filter-bar button:hover {
+    background-color: lightgrey; /* Light grey on hover */
+}
+
+
+
+.price-input {
+    padding: 10px; /* Add some padding for better appearance */
+    border: 1.5px solid #c0c0c0; /* Border styling */
+    border-radius: 5px; /* Rounded corners */
+    width: 140px; /* Width of the input field */
+}
+
+/* Styling the placeholder text */
+.price-input::placeholder {
+    color: #aaa; /* Color for the placeholder text */
+    opacity: 1; /* Full opacity for visibility */
+}
+
+
+/* Property Listings */
+.property-listings-container {
+    padding-top: 0px; /* Space for the fixed filter bar */
+}
+
+.property-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.property-card {
+    border: 1.5px solid #7de6e8;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 8px 130px;
+    background-color: #fff;
+    width: 1000px;
+}
+.property-box {
+    display: flex;
+    justify-content: space-between; /* Ensures even spacing between the fields */
+    /* margin-top: -3px; */
+    margin-bottom: 1px; /* Adds space between rows */
+}
+
+.property-field {
+    flex-basis: 80%; /* Each field takes about one-fifth of the space */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1.5px solid #c0c0c0;
+    border-radius: 5px;
+    width: 143px;
+    height: 60px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    text-align: center; /* Center text within the box */
+    font-size: 14px; /* Adjust font size as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+}
+
+.property-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1px;
+}
+
+.property-description {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.property-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -20px;
+}
+
+.property-location,
+.property-price,
+.property-bhk,
+.property-facing,
+.property-rent-sale {
+    font-size: 10px;
+    color: #555;
+}
+
+.property-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1px; /* Spacing above actions */
+}
+
+.property-actions button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.property-actions button:hover {
+    background-color: #0056b3;
+}
+
+.bookmark-buttons {
+    display: flex;
+    gap: 10px; /* Adds space between the bookmark buttons */
+    margin-bottom: 10px; /* Adds space below the buttons */
+}
+
+.bookmark-btn {
+    padding: 3px 3px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.seller-btn {
+    padding: 3px 3px;
+    background-color: #24b661;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.bookmark-btn:hover, .seller-btn:hover {
+    background-color: #0056b3;
+}
+
+.seller-details {
+    margin-top: 4px; /* Space between button and details */
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 4px; /* Increased padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #7de6e8; /* Light border for subtle separation */
+    width: 100%; /* Allow details to take full width */
+    max-width: 420px; /* Set a max width for better layout control */
+    font-size: 16px; /* Font size for seller details */
+    color: #333; /* Darker text color for better readability */
+}
+.view-seller-details {
+    margin: 10px 0; /* Add some spacing around the section */
+    display: flex;
+    flex-direction: column; /* Stack button and details vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+
+
+/* Bookmark Message */
+.bookmark-message {
+    color: green;
+}
+
+.property-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.property-image {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.image-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.image-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    cursor: zoom-in;
+}
+
+.modal-image:hover {
+    transform: scale(1.2); /* Zoom effect */
+    transition: transform 0.3s ease;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
